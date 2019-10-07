@@ -1,0 +1,35 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "Quetzal" %></h1>
+  <p>Analytical web apps, beautiful, fast, easy and real-time using Elixir. No Javascript required.</p>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2>Resources</h2>
+    <ul>
+      <li>
+        <a href="https://hexdocs.pm/quetzal/0.1.4/Quetzal.html">Guides &amp; Docs</a>
+      </li>
+      <li>
+        <a href="https://github.com/zgbjgg/quetzal">Source</a>
+      </li>
+    </ul>
+  </article>
+  <article class="column">
+    <h2>Examples</h2>
+    <ul>
+      <li>
+        <a href="/render-components">Components</a>
+      </li>
+      <li>
+        <a href="/manual-update-components">Manual update components</a>
+      </li>
+      <li>
+        <a href="/callbacks">Callbacks</a>
+      </li>
+      <li>
+        <a href="/multiapp/app1">Multiple app support</a>
+      </li>
+    </ul>
+  </article>
+</section>
