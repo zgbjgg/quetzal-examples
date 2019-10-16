@@ -23,4 +23,8 @@ defmodule AppWebWeb.PageController do
   def multiapp(conn, params) do
     LiveView.Controller.live_render(conn, AppWeb.MultiAppLiveView, session: %{"app" => params["app"]})
   end
+
+  def nested_components(conn, _params) do
+    LiveView.Controller.live_render(conn, AppWeb.NestedComponentsLiveView, session: %{})
+  end
 end

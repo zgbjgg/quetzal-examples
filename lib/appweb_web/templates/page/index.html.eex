@@ -30,6 +30,9 @@
       <li>
         <a href="/multiapp/app1">Multiple app support</a>
       </li>
+      <li>
+        <a href="/nested-components">Nested components</a>
+      </li>
     </ul>
   </article>
 </section>
