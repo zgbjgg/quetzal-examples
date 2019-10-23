@@ -16,6 +16,13 @@ defmodule AppWeb.NestedComponentsLiveView do
      ]}]}
   end
 
+  def do_update() do
+    newvalues = for _n <- 1..3, do: :rand.uniform(100)
+    components = [mypieg: [labels: ["Black", "White", "Gray"], values: newvalues]]
+    update_components("MYAPP", components)
+    :ok
+  end
+
   def update_output_div_and_pie_graph("myform", _target, fields) do
     # This updates the div and the pie graph at the same time
     value = fields["mytext"]

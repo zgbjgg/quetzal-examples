@@ -33,6 +33,9 @@
       <li>
         <a href="/nested-components">Nested components</a>
       </li>
+      <li>
+        <a href="/update-components-with-state">Update components conditionally using State</a>
+      </li>
     </ul>
   </article>
 </section>

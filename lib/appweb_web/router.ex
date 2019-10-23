@@ -23,6 +23,7 @@ defmodule AppWebWeb.Router do
     get "/callbacks", PageController, :callbacks
     get "/multiapp/:app", PageController, :multiapp
     get "/nested-components", PageController, :nested_components
+    get "/update-components-with-state", PageController, :update_components_with_state
   end
 
   # Other scopes may use custom stacks.

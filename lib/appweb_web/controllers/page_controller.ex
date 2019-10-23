@@ -27,4 +27,8 @@ defmodule AppWebWeb.PageController do
   def nested_components(conn, _params) do
     LiveView.Controller.live_render(conn, AppWeb.NestedComponentsLiveView, session: %{})
   end
+
+  def update_components_with_state(conn, _params) do
+    LiveView.Controller.live_render(conn, AppWeb.StateLiveView, session: %{})
+  end
 end
