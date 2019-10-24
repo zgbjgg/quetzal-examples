@@ -5,8 +5,8 @@ defmodule AppWeb.StateLiveView do
 
   @impl Quetzal.LiveView
   def components(_session) do
-    {"MYAPP", [{Quetzal.Form, [id: "myform", name: "myform",
-       children: [{Quetzal.InputText, [id: "mytext", value: "", name: "mytext"]}]
+    {"MYAPP", [{Quetzal.Form, [id: "myform", name: "myform", change: "myform",
+       children: [{Quetzal.InputText, [id: "mytext", value: "", name: "mytext", change: "mytext"]}]
      ]},
      {Quetzal.Div, [id: "mydiv", style: "", children: ""]},
      {Quetzal.Div, [id: "mydiv2", style: "", children: "In the IEX console execute: AppWeb.StateLiveView.push_update and if the first input contains 'hello' the pie graph will be updated"]},

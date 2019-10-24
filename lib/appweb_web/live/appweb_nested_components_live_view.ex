@@ -5,9 +5,9 @@ defmodule AppWeb.NestedComponentsLiveView do
 
   @impl Quetzal.LiveView
   def components(_session) do
-    {"MYAPP", [{Quetzal.Form, [id: "myform", name: "myform",
-       children: [{Quetzal.InputText, [id: "mytext", value: "", name: "mytext"]},
-         {Quetzal.InputText, [id: "mytext2", value: "", name: "mytext2"]}]
+    {"MYAPP", [{Quetzal.Form, [id: "myform", name: "myform", change: "myform",
+       children: [{Quetzal.InputText, [id: "mytext", value: "", name: "mytext", change: "mytext"]},
+         {Quetzal.InputText, [id: "mytext2", value: "", name: "mytext2", change: "mytext2"]}]
      ]},
      {Quetzal.Div, [id: "mydiv", style: "", children: ""]},
      {Quetzal.Div, [id: "mydiv2", style: "", children: "If you write inside the inputs above the pie graph and div output will change."]},
