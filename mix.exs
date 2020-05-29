@@ -39,7 +39,8 @@ defmodule AppWeb.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:quetzal, "~> 0.1.11"}
+      {:quetzal, "~> 0.1.11"},
+      {:jun, "~> 0.2.6"}
     ]
   end
 end
