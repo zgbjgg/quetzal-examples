@@ -10,6 +10,8 @@ defmodule AppWeb.Application do
     children = [
       # Start supervisor for Quetzal
       {Quetzal, name: Quetzal.Registry},
+      # Start the JUN worker
+      {AppWeb.Jun, []},
       # Start the endpoint when the application starts
       AppWebWeb.Endpoint
       # Starts a worker by calling: AppWeb.Worker.start_link(arg)
