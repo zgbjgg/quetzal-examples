@@ -31,4 +31,8 @@ defmodule AppWebWeb.PageController do
   def update_components_with_state(conn, _params) do
     LiveView.Controller.live_render(conn, AppWeb.StateLiveView, session: %{})
   end
+
+  def update_components_using_jun(conn, _params) do
+    LiveView.Controller.live_render(conn, AppWeb.JunLiveView, session: %{})
+  end
 end

@@ -1,6 +1,6 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Quetzal" %></h1>
-  <p>Analytical web apps, beautiful, fast, easy and real-time using Elixir. No Javascript required.</p>
+  <p>Analytical web apps, fast, easy and real-time using Elixir. No Javascript required.</p>
 </section>
 
 <section class="row">
@@ -35,6 +35,9 @@
       </li>
       <li>
         <a href="/update-components-with-state">Update components conditionally using State</a>
+      </li>
+      <li>
+        <a href="/update-components-using-jun">Update components using JUN</a>
       </li>
     </ul>
   </article>

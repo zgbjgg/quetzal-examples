@@ -24,6 +24,7 @@ defmodule AppWebWeb.Router do
     get "/multiapp/:app", PageController, :multiapp
     get "/nested-components", PageController, :nested_components
     get "/update-components-with-state", PageController, :update_components_with_state
+    get "/update-components-using-jun", PageController, :update_components_using_jun
   end
 
   # Other scopes may use custom stacks.
